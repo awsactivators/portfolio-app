@@ -1,6 +1,7 @@
 import '../styles/styles.css';
 import ResumeButton from '../components/ResumeButton';
 import Skills from '../components/Skills';
+import ProjectSection from '../sections/ProjectSection';
 import veeImg from '../assets/images/vee.png';
 
 
@@ -36,6 +37,9 @@ function Home() {
       </section>
       <section>
         <Skills />
+      </section>
+      <section>
+        <ProjectSection />
       </section>
     </main>
   );
