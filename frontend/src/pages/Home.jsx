@@ -1,11 +1,27 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import '../styles/styles.css';
 import ResumeButton from '../components/ResumeButton';
 import Skills from '../components/Skills';
 import ProjectSection from '../sections/ProjectSection';
+import BlogSection from '../sections/BlogSection';
 import veeImg from '../assets/images/vee.png';
 
 
 function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100); 
+      }
+    }
+  }, [location]);
+
   return (
     <main>
       <section id="about-me" style={{ backgroundImage: `url(${veeImg})` }}>
@@ -40,6 +56,9 @@ function Home() {
       </section>
       <section>
         <ProjectSection />
+      </section>
+      <section>
+        <BlogSection />
       </section>
     </main>
   );

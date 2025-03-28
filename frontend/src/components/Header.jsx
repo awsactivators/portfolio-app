@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/images/Kvieve-2-2.png';
 import menuIcon from '../assets/images/menu.png';
 import { useState } from 'react';
@@ -22,12 +22,14 @@ function Header() {
           />
         </div>
         <nav id="main-navigation">
-          <ul className={`menu ${showMenu ? 'show-small' : ''}`} id="main-menu">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <ul className={`menu ${showMenu ? 'show-small' : ''}`} id="main-menu">
+          <li><NavLink to="/#about-me">About Me</NavLink></li>
+          <li><NavLink to="/#skill">Skills</NavLink></li>
+          <li><NavLink to="/#project">Projects</NavLink></li>
+          <li><NavLink to="/#blog">Blog</NavLink></li>
+          <li><NavLink to="/#contact">Contact</NavLink></li>
+        </ul>
+
         </nav>
       </div>
     </header>
