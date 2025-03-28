@@ -6,6 +6,7 @@ import Skills from '../components/Skills';
 import ProjectSection from '../sections/ProjectSection';
 import BlogSection from '../sections/BlogSection';
 import veeImg from '../assets/images/vee.png';
+import Contact from '../sections/Contact';
 
 
 function Home() {
@@ -59,6 +60,9 @@ function Home() {
       </section>
       <section>
         <BlogSection />
+      </section>
+      <section>
+        <Contact />
       </section>
     </main>
   );
