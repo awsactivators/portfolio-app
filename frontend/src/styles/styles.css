@@ -313,7 +313,7 @@ div.project-detail {
   padding-left: 20px;
   padding-bottom: 15px;
   color: #000;
-  height: 240px;
+  height: 200px;
 }
 
 .project-summary p {
@@ -414,6 +414,7 @@ div.project-detail {
   padding: 2rem;
   min-height: 100vh;
   margin-top: 100px;
+  margin-bottom: 230px;
 }
 
 .main-toggle {
@@ -998,6 +999,12 @@ footer {
     width: 300px;
   }
 
+  .project-summary {
+    padding-left: 30px;
+    padding-bottom: 50px;
+    width: 250px;
+  }
+
   .project-summary p {
     max-width: 280px;
   }
@@ -1164,7 +1171,7 @@ footer {
   }
   
   .project-summary p {
-    max-width: 420px;
+    max-width: 380px;
   }
 
   .contact-container input,
@@ -1371,6 +1378,9 @@ footer {
     row-gap: 40px;
   }
 
+  .project-summary p {
+    width: 380px;
+  }
 }
 
 
@@ -1580,7 +1590,11 @@ footer {
   }
 
   .project-summary p {
-    max-width: 260px;
+    max-width: 280px;
+  }
+
+  .view-btn {
+    margin-top: 30px;
   }
 
   .contact-container h2 {

@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import Pagination from '../components/Pagination';
 
 function Projects() {
+  const navigate = useNavigate();
   const [projects, setProjects] = useState([]);
   const [category, setCategory] = useState('software');
   const [currentPage, setCurrentPage] = useState(1);
@@ -61,6 +63,7 @@ function Projects() {
       </div>
 
       <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
+      <button className="back-btn" onClick={() => navigate('/#project')}>← Back to Project</button>
     </div>
   );
 }
