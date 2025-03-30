@@ -10,6 +10,10 @@ function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
   const perPage = 8;
 
+  useEffect(() => {
+    document.title = "Projects"
+  }, []);
+
   const fetchProjects = (cat) => {
     fetch(`${import.meta.env.VITE_API_URL}/api/projects/${cat}`)
       .then((res) => res.json())

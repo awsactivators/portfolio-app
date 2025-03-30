@@ -13,6 +13,10 @@ function Home() {
   const location = useLocation();
 
   useEffect(() => {
+    document.title = "Home"
+  }, []);
+
+  useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {

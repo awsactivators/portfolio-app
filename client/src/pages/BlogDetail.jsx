@@ -7,6 +7,10 @@ function BlogDetail() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
+    document.title = "Blog Post Details"
+  }, []);
+
+  useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/api/posts/${id}`)
       .then(res => res.json())
       .then(data => setPost(data));
