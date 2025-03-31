@@ -848,9 +848,10 @@ footer {
   z-index: 1;
 }
 
-/* .back-to-top {
-  padding-bottom: 0px;
-} */
+.back-to-top {
+  background-color: black;
+  border: none;
+}
 
 .back-to-top a {
   text-decoration: none;

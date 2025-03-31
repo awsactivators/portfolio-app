@@ -2,12 +2,10 @@ function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <div className="back-to-top">
-          <a href="#about-me">
-            <p id="up-arrow">^</p>
-            <p id="back">Back to top</p>
-          </a>
-        </div>
+        <button className="back-to-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <p id="up-arrow">^</p>
+          <p id="back">Back to top</p>
+        </button>
         <div className="social-icons">
           <a href="https://github.com/awsactivators" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a>
           <a href="https://linkedin.com/in/vieve-awa" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
