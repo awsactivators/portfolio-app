@@ -68,7 +68,7 @@ VITE_API_URL=https://portolio-api-wsal.onrender.com
 ```
 PORT=5005
 
-The secret will be used for the session
+# The secret will be used for the session
 SESSIONSECRET=your-secret-key
 
 DBUSER=your-mongodb-user
@@ -76,7 +76,7 @@ DBPWD=your-mongodb-password
 DBHOST=your-mongodb-host
 DBNAME=your-database-name
 
-Salt for password hashing (should be at least 16 bytes long)
+# Salt for password hashing (should be at least 16 bytes long)
 SALT=your-salt-key
 ```
 
