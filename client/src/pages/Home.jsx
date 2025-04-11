@@ -68,6 +68,9 @@ function Home() {
       <section>
         <Contact />
       </section>
+      <section>
+        <div class="contact-overflow"></div>
+      </section>
     </main>
   );
 }
