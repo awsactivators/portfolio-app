@@ -1,4 +1,22 @@
-/* Default */
+/* ============================================================================
+   TABLE OF CONTENTS
+   ============================================================================
+   .01. Root Variables & Base Styles
+   .02. Header Styles
+   .03. About Me Section
+   .04. Skills Section + Modal
+   .05. Project Section (Homepage & Detail Page)
+   .06. Blog Section (Homepage, Blog Cards, Single Post)
+   .07. Contact Section
+   .08. Footer
+   .09. Responsive Media Queries
+        - Desktop
+        - Tablet
+        - Mobile
+============================================================================ */
+
+
+/* .01. Root Variables & Base Styles */
 :root {
   --accent-color: #AE8B3D;
   --bg-color: #E1E0E0;
@@ -15,7 +33,7 @@ body {
 
 
 
-/* Header */
+/* .02. Header Styles */
 .header {
   background-color: black;
   display: flex;
@@ -64,7 +82,7 @@ body {
 
 
 
-/* About Me*/
+/* .03. About Me Section */
 #about-me {
   margin-top: 100px;
   background-color: black;
@@ -136,7 +154,7 @@ h1 {
 
 
 
-/* Skills */
+/* .04. Skills Section + Modal */
 .skills-container {
   background-color: black;
   border-bottom: 1px solid var(--accent-color);
@@ -281,7 +299,7 @@ h1 {
 
 
 
-/* Projects */
+/* .05. Project Section (Homepage & Detail Page) */
 .project-container {
   background-color: black;
   border-bottom: 1px solid var(--accent-color);
@@ -306,7 +324,6 @@ div.project-detail {
   padding: 45px 18px 20px 18px;
   max-width: 100%;
   height: auto;
-  /* width: 350px; */
 }
 
 .project-summary {
@@ -414,7 +431,6 @@ div.project-detail {
   padding: 2rem;
   min-height: 100vh;
   margin-top: 100px;
-  margin-bottom: 230px;
 }
 
 .main-toggle {
@@ -526,7 +542,7 @@ div.project-detail {
 }
 
 
-/* Blog Post Home */
+/* .06. Blog Section (Homepage, Blog Cards, Single Post) */
 .blog-section {
   background-color: black;
   color: #fff;
@@ -573,7 +589,6 @@ div.project-detail {
   background-color: #f2f2f2;
   min-height: 100vh;
   margin-top: 70px;
-  margin-bottom: 230px;
 }
 
 .blog-page .h2-header {
@@ -711,13 +726,12 @@ div.project-detail {
 }
 
 
-/* Contact */
+/* .07. Contact Section */
 #contact {
   position: relative;
   background-color: var(--bg-color); 
   overflow: hidden;
   min-height: 850px;
-  margin-bottom: 250px;
 }
 
 .contact-container {
@@ -826,11 +840,10 @@ textarea::placeholder {
 
 
 
-/* Footer */
+/* .08. Footer */
 footer {
   background-color: black;
   color: #fff;
-  /* padding: 20px 0; */
   text-align: center;
 }
 
@@ -842,10 +855,6 @@ footer {
   padding: 1rem 0;
   font-size: 0.9rem;
   width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
 }
 
 .back-to-top {
@@ -885,7 +894,7 @@ footer {
 
 
 /******************************************************************************/
-
+/* .09. Responsive Media Queries */
 /* Desktop (default) - Display 5 images */
 @media (min-width: 1024px) {
   .modal-skills-container {
